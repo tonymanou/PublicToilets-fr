@@ -1,11 +1,12 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'kotlinx-serialization'
 }
 
 android {
     compileSdk 30
-    namespace 'com.tonymanou.pubpoo.model'
+    namespace 'com.tonymanou.pubpoo.data'
 
     defaultConfig {
         minSdk 21
@@ -25,4 +26,11 @@ android {
 }
 
 dependencies {
+    implementation project(':model')
+
+    // AndroidX
+    implementation "androidx.annotation:annotation:1.2.0"
+
+    // Unit tests
+    testImplementation 'junit:junit:4.13.2'
 }

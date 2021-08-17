@@ -10,3 +10,4 @@ rootProject.name = "Public Toilets FR"
 
 include ':app'
 include ':model'
+include ':data'
