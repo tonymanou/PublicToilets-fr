@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Public Toilets FR</string>
+
+    <string name="app_name">Sanisettes de Paris</string>
+
+    <string name="toilet_accessibility_yes_description">Accessible</string>
+    <string name="toilet_accessibility_no_description">Non-accessible</string>
+
+    <string name="toilet_accessible_filter_description">Afficher toutes les sanisettes</string>
+    <string name="toilet_not_accessible_filter_description">Afficher les sanisettes accessibles</string>
+
 </resources>
