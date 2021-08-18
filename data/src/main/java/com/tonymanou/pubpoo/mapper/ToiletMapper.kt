@@ -3,7 +3,7 @@ package com.tonymanou.pubpoo.mapper
 import androidx.annotation.VisibleForTesting
 import com.tonymanou.pubpoo.model.Location
 import com.tonymanou.pubpoo.model.Toilet
-import com.tonymanou.pubpoo.repository.model.RemoteResponse
+import com.tonymanou.pubpoo.repository.remote.model.RemoteResponse
 
 internal const val TOILET_ACCESSIBLE_VALUE_TRUE = "Oui"
 private const val TOILET_TYPE = "TOILETTES"

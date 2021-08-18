@@ -1,4 +1,4 @@
-package com.tonymanou.pubpoo.repository.model
+package com.tonymanou.pubpoo.repository.remote.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

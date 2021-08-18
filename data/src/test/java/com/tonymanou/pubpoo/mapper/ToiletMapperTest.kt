@@ -1,9 +1,9 @@
 package com.tonymanou.pubpoo.mapper
 
 import com.tonymanou.pubpoo.model.Location
-import com.tonymanou.pubpoo.repository.model.RemoteResponse
-import com.tonymanou.pubpoo.repository.model.RemoteToilet
-import com.tonymanou.pubpoo.repository.model.RemoteToiletData
+import com.tonymanou.pubpoo.repository.remote.model.RemoteResponse
+import com.tonymanou.pubpoo.repository.remote.model.RemoteToilet
+import com.tonymanou.pubpoo.repository.remote.model.RemoteToiletData
 import org.junit.Assert.*
 import org.junit.Test
 
