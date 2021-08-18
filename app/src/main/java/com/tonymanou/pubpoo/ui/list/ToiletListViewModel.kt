@@ -34,8 +34,10 @@ class ToiletListViewModel(
         }
     }
 
-    private val api = ToiletListApi()
-    private val repository = ToiletListRepository(api)
+    // TODO use DI here
+    private val repository = ToiletListRepository(
+        api = ToiletListApi()
+    )
 
     private var currentAccessibleOnly = savedStateHandle.getLiveData(EXTRA_QUERY_ACCESSIBILITY, false)
     private var currentSearchResult: Flow<PagingData<Toilet>>? = null

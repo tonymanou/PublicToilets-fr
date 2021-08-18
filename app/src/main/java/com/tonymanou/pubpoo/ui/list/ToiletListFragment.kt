@@ -60,13 +60,11 @@ class ToiletListFragment : Fragment() {
             searchToilets(it)
         }
 
-        // Scroll to top when the list is refreshed from network.
+        // Scroll to top when the list is refreshed from network
         lifecycleScope.launch {
             adapter.loadStateFlow
-                // Only emit when REFRESH LoadState for RemoteMediator changes.
                 .distinctUntilChangedBy { it.refresh }
-                // Only react to cases where Remote REFRESH completes i.e., NotLoading.
-                .filter { it.refresh is LoadState.NotLoading && viewModel.accessibleOnly.value == true }
+                .filter { it.refresh is LoadState.NotLoading }
                 .collect(object : FlowCollector<Any> {
                     override suspend fun emit(value: Any) {
                         binding.toiletsList.scrollToPosition(0)

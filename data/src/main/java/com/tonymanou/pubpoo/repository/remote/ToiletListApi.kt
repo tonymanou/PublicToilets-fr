@@ -14,6 +14,7 @@ import kotlinx.serialization.json.Json as KotlinxSerializationJson
 
 class ToiletListApi : ToiletListApiContract {
 
+    // TODO use DI here
     private val client = HttpClient(CIO) {
         install(JsonFeature) {
             serializer = KotlinxSerializer(
